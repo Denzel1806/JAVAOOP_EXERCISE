@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-
-
 class Account {
     private String accountNumber;
     private String accountHolder;
@@ -11,9 +9,8 @@ class Account {
         this.accountNumber = accountNumber;
         this.accountHolder = accountHolder;
         this.balance = balance;
-    }
+            }
 
-    
     public String getAccountNumber() {
         return accountNumber;
     }
@@ -61,7 +58,7 @@ class Bank {
     
     public void addAccount(Account account) {
         accounts.add(account);
-        System.out.println("🏦 Account added: " + account.getAccountHolder());
+        System.out.println(" Account added: " + account.getAccountHolder());
     }
 
 
@@ -76,7 +73,7 @@ class Bank {
             }
         }
         if (!removed) {
-            System.out.println("⚠️ Account not found: " + accountNumber);
+            System.out.println(" Account not found: " + accountNumber);
         }
     }
 
